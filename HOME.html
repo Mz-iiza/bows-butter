@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!DOCTYPE html>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bows & Butter</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet"href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+    <link ref="javaScript"href="index.js">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Tai+Heritage+Pro&display=swap" rel="stylesheet">
+    <script src="index jS"defer>index</script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>Bows & Butter</h1>
+            <p>Nourishing Your Body Is Nourishing Your Life</p>
+            <div class="banner-btn">
+                <a href="ONLINE STORE.html"><span></span> Body Butter</a>
+                <a href="ONLINE STORE.html"><span></span>Hair Butter</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#feature">FEATURES</a></li>
+                <li><a href="#service">SERVICES</a></li>
+                <li><a href="ONLINE STORE.html">ONLINE STORE</a></li>
+                <li><a href="#footer">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="menuBtn">
+        <img src="logo/images.png" id="menu">
+    </div>
+
+
+    <!--features-->
+
+<section id="feature">
+    <div class="title-text">
+        <p>FEATURES</p>
+        <h1>Why Choose Us</h1>
+    </div>
+    <div class="feature-box">
+        <div class="features">
+            <h1>Experienced Staff</h1>
+            <div class="features-desc">
+                <div class="feature-icon">
+                    <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                </div>
+                <div class="feature-text">
+                    <p>With our experience over the years, we have handcrafted a perfected mix, with it's irresistable fragrance and rich nutrients that nourishes the body.</p>
+                </div>
+            </div>
+        </div>
+        <div class="features-img">
+            <img src="image/pexels-angela-roma-7319122.jpg">
+        </div>
+    </div>
+</section>
+
+<!--Service-->
+
+<section id="service">
+    <div class="title-text">
+        <p>SERVICES</p>
+        <h1>We Provide Lustre</h1>
+    </div>
+    <div class="service-box">
+        <div class="single-service">
+            <img src="image/pexels-sora-shimazaki-5938596.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Skincare product for Women</h3>
+                <hr>
+                <p>gives shine and glow to the Skin</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="image/pexels-doterra-international-llc-3969198.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Skincare product for Men</h3>
+                <hr>
+                <p>gives shine and glow to the Skin</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="image/pexels-lucas-da-miranda-1967902.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Haircare Product</h3>
+                <hr>
+                <p>gives shine and glow to the Hair</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="image/pexels-ольга-волковицкая-10860492.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Sealant</h3>
+                <hr>
+                <p>Locks in Moisture with Fragrance</p>
+            </div>
+        </div>
+    </div>
+   
+</section>
+
+
+<!--FOOTER-->
+<section id="footer">
+    <img src="image/pexels-cup-of-couple-6634188.jpg" class="footer-img">
+    <div class="title-text">
+        <p>CONTACT</p>
+        <h1>Visit Shop Today</h1>
+    </div>
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Opening Hours</h1>
+            <P><i class="fa fa-clock-o"></i>24 hours</P>
+            <P><i class="fa fa-clock-o"></i>MONDAYS - SUNDAYS</P>
+        </div>
+        <div class="footer-right"> 
+            <h1>Get In Touch</h1>
+            <p>Citec Villa, Gwarinpa Abuja.<i class="fa fa-map-marker"></i></p>
+            <p>info@bows&butter.com<i class="fa fa-paper-plane"></i></p>
+            <p>+234 BOWS&BUTTER<i class="fa fa-phone"></i></p>
+        </div>
+    </div>
+
+    <div class="social-links">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-youtube-play"></i>
+ 
+     </div>
+</section>
+
+    
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src ="logo/close.jpg"
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src="logo/images.png"
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            speed: 1000,
+            speedAsDuration: true
+        })
+    </script>
+
+    
+    
+</body>
+    </html>
