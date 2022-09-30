@@ -99,8 +99,11 @@ nav ul li a{
     .banner-text h1{
         font-size: 44px;
     }
-    .banner-btn a{
-        display: block;
+    .banner-body{
+        display: none;
+    }
+    .banner-btn {
+       display: block;
         margin: 20px auto;
     }
 }
