@@ -98,6 +98,9 @@ nav ul li a{
 @media screen and (max-width: 770px) {
     .banner-text h1{
         font-size: 44px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
     }
     .banner-body{
         display: none;
